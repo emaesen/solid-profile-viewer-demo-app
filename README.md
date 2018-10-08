@@ -27,7 +27,7 @@ This demo app is based upon [Make a Solid app on your lunch break](https://solid
 
 In addition to the base app, this demo app:
 * displays home page, image and friends information
- - with parallel Promises implementation for the friends retrieval
+   - with parallel Promises implementation for the friends retrieval
 * has a few WebID profile presets
 
 ***Note:*** *As I was implementing the friends retrieval, many WebIDs came back with fetch errors. I don't know if there is a way around this (different fetch implementations for different POD notation styles maybe?) so I decided to show the successful friend retrievals as well as the fetch errors.*
