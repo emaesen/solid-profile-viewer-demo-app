@@ -1,0 +1,58 @@
+body {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 1em;
+}
+
+body, input {
+  font: 11pt/1.3 "Helvetiva Neue", Helvetica, Arial, sans-serif;
+}
+h2{
+  margin-top:2.5em;
+}
+h3{
+  margin:.5em 0 0 0;
+}
+ul, menu, dir{
+  padding-inline-start:1em;
+}
+ul{
+  display: inline-block;
+  margin:0;
+}
+li{
+  line-height: 1.7em;
+}
+input{
+  width:20em;
+}
+#logout, .logged-in{
+  display:none;
+}
+.login-status {
+  border: 1px solid #e28804;
+  color: #7d4a01;
+  border-radius: .5em;
+  text-align: center;
+  padding: .5em;
+}
+.img{
+  width:50px;
+}
+button{
+  cursor:pointer;
+  border:1px solid #7f7ee2;
+  padding: .4em 1em;
+  border-radius: .3em;
+}
+.button{
+  cursor:pointer;
+  border:1px solid #7f7ee2;
+  color: #3938ce;
+  border-radius: 1em;
+  padding: .1em .5em;
+  margin: .1em 0;
+}
+div.button{
+  display: inline-flex;
+}

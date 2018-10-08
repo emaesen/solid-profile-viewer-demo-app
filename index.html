@@ -1,0 +1,62 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Profile Viewer</title>
+  <link rel="stylesheet" href="styles/main.css">
+</head>
+<body>
+  <h1>Solid Profile Viewer Demo App</h1>
+  <p>
+    Based upon <a href="https://solid.inrupt.com/docs/app-on-your-lunch-break">"Make a Solid app on your lunch break"</a> with display of additional details, profile presets, and internal asynchronous parallel Promises implementation for friends retrieval.
+  </p>
+  <p>
+    WebID: <a href="https://emaesen.inrupt.net/profile/card#me">https://emaesen.inrupt.net/profile/card#me</a>
+  </p>
+
+
+  <p id="login" class="login-status">
+    You are not logged in.
+    <button>Log in</button>
+  </p>
+  <p id="logout" class="login-status">
+    You are logged in as <span id="user"></span>.
+    <button>Log out</button>
+  </p>
+
+  <div class="logged-in">
+    <h2>Profile Selector</h2>
+    <div>
+      <label for="profile">Profile:</label>
+      <input id="profile" placeholder="WebId..."/>
+      <button id="view">View</button>
+    </div>
+    <div>
+      <h3>Profile presets:</h3>
+      <div id="cardliu" class="button">logged-in user</div>
+      <div id="cardrv" class="button" data-webid="https://ruben.verborgh.org/profile/#me">Ruben Verborgh</div>
+      <div id="cardcs" class="button" data-webid="http://csarven.ca/#i">Sarven Capadisli</div>
+      <div id="cardwb" class="button" data-webid="https://workbot.databox.me/profile/card#me">Work Bot</div>
+    </div>
+
+    <h2>Profile Details</h2>
+    <dl id="viewer">
+      <dt>Full name:</dt>
+      <dd id="fullName"></dd>
+      <dt>Home page:</dt>
+      <dd id="homepage"></dd>
+      <dt>Image:</dt>
+      <dd id="img"></dd>
+      <dt>Friends <span id="nr-of-friends"></span>:</dt>
+      <dd>
+        <ul id="friends"></ul>
+      </dd>
+    </dl>
+  </div>
+
+  <script src="scripts/jquery.3_3_1.js"></script>
+  <script src="scripts/solid-auth-client.bundle.js"></script>
+  <script src="scripts/rdflib.min.js"></script>
+  <script src="scripts/main.js"></script>
+</body>
+</html>
